@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AutoGlassWorks</title>
+    <link
+      rel="icon"
+      href="#"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="#" />
+
+    <!-- All CSS -->
+    <style>
+      .navbar-custom {
+        border-radius: 30px;
+      }
+      .welcome_message {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+
+    {% comment %} navbar {% endcomment %}
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <span class="text-warning text-xxl">AUTO-</span>GLASSWORKS
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse" data-bs-target"#navmenu"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#concepts"
+                style="font-size: 18px"
+                ></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#questions"
+                style="font-size: 18px"
+                >Questions</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="font-size: 18px"
+                >Login</a
+              >
+            </li>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#quote">QUICK QUOTE</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-dark text-light p-5 pt-lg-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1 class="mx-4">Smart Server Deals <span class="text-warning">Johannesburg</span></h1>
+            <p class="lead my-4">
+              We are experts in car windscreen replacement with years of experience, replacing any glasses, from any brand😊 We can come to you…not disrupting your day-to-day matters
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">See How It Works Now🏄</a>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block mx-4" src="https://picsum.photos/id/2/5000/3333?blur=8" alt="IMAGE HERE">
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="bg-primary text-light p-5 fixed-size-section">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          
+          <!-- couresl-->
+
+          <div class="col-md-3 col-lg-6">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block w-100">
+                  <h4>Budget Screens</h4>
+                  <p class="text-info">Don't let that annoying crack get any worse</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100">
+                  <h4>Save Now</h4>
+                  <p class="text-info">Balance cost-effectiveness with quality. Save money on top-quality windscreens with our affordable prices</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100">
+                  <h4>High Quality</h4>
+                  <p class="text-info">Highest Quality Workmanship, Maintain safety, visibility, vehicle integrity, regulatory compliance, aesthetic appeal, and long-term value</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100">
+                  <h4>Our Mobile Service</h4>
+                  <p class="text-info">We’ll Come to You During Working Hours</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+          <h5 class="ms-5 mb-3 me-5 mb-md-0">Signup for Our Newsletter</h5>
+          <div class="input-group news-input">
+            <input type="email" class="form-control m" placeholder="Enter Email">
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop-fill"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="class-text">
+                  Online courses teach students how to manage their time better since the student bears the responsibility of engaging with the course instead of simply showing up to class on an assigned day and time. As a result, students not only gain knowledge from the coursework, but they also sharpen their time management skills.
+                </p>
+                <a href="https://medium.com/@pasej5/the-advantages-and-disadvantages-of-virtual-hybrid-and-in-person-studying-9ffce8302588" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="class-text">
+                  Rather than attending multiple on-campus class sessions each week, students complete more than half of their work online, allowing them to arrange coursework around their other responsibilities.  creates an environment that promotes personalized learning experiences while leveraging the benefits of both in-person and online instruction.
+                </p>
+                <a href="https://medium.com/@pasej5/the-advantages-and-disadvantages-of-virtual-hybrid-and-in-person-studying-9ffce8302588" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">In Person</h3>
+                <p class="class-text">
+                  These follow the traditional model of face-to-face instruction within a physical classroom. Key characteristics include: Social interaction: In-person classes allow for direct social interaction between students and lecturers, creating a more interactive learning environment.
+                </p>
+                <a href="https://medium.com/@pasej5/the-advantages-and-disadvantages-of-virtual-hybrid-and-in-person-studying-9ffce8302588" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Learn Sections -->
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="https://picsum.photos/id/809/5000/3333.jpg" class="img-fluid" alt="LearningImage">
+          </div>
+          <div class="col-md p-5">
+              <h2>Why Learn Tech</h2>
+              <p class="lead">
+                Cost and Time-Saving. Since machines are way faster than humans, certain tasks that may require an incredible amount of manual work and attention to detail can be easily accomplished with the help of technology. Technology also ensures improved accuracy.
+              </p>
+              <p>
+                Getting used to current technology will allow you to easily adjust to all the emerging technologies that will infiltrate our day-to-day lives in the coming decades. Acquiring technology skills also makes you more appealing to employers and may help you obtain or maintain certain job positions
+              </p>
+              <a href="https://medium.com/@pasej5/the-advantages-and-disadvantages-of-virtual-hybrid-and-in-person-studying-9ffce8302588" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i>Read More
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="concepts" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          
+          <div class="col-md p-5">
+              <h2>Basic Fundermental Concepts</h2>
+              <p class="lead">
+                The fundamental concepts of programming form the foundation upon which all software development is built. These concepts are universal across programming languages and frameworks.
+                Irrespective of the programming language we choose to learn, the basic concepts of programming are similar across languages. Some of these concepts include:<br>
+                1) Variable declaration<br>
+                2) Basic syntax<br>
+                3) Data types and structures<br>
+                4) Flow control structures<br>
+                5) Iteration (Loops)<br>
+                6) Functional programming<br>
+                7) Debugging<br>
+              </p>
+              <p>
+                To get the best out of the blended learning experience, you will need the following minimum requirements: a computer or laptop with WI-FI, Windows 10 or higher, Intel Pentium 4 Processor or Higher, 1 gigahertz (GHz) or faster processor or a System on a Chip (SoC), 1 gigabyte (GB) for 32-bit or 2 GB for 64-bit (Or Higher) for your RAM, 16 GB for 32-bit OS 32 GB for 64-bit OS (or Higher) Hard Drive space, DirectX 9 or later with WDDM 1.0 driver for your Graphics card, and a Screen Resolution of a minimum 1280 x 800
+              </p>
+              <a href="#" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i>Read More
+              </a>
+          </div>
+          <div class="col-md">
+           <img src="#" class="img-fluid" alt="LearningImage">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Arccordion -->
+
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+
+          <!-- first item-->
+           
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+               Where exaclty are you located?
+              </button>
+            </h2>
+            <div id="question-one" class="accordion-collapse collapse" data-bs-parent="questions">
+              <div class="accordion-body">
+                We have Offices in South Africa, Sandton and also In Ghana
+              </div>
+            </div>
+          </div>
+
+          <!-- Second item -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                How much does it cost to attend?
+              </button>
+            </h2>
+            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="questions">
+              <div class="accordion-body">100% free</div>
+            </div>
+          </div>
+
+          <!-- Third item-->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                What do i need to know?
+              </button>
+            </h2>
+            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="questions">
+              <div class="accordion-body">Before starting to program, some recommend understanding computer architecture and data basics, and how programming languages and the internet work. Others suggest figuring out why you want to learn to code, and choosing a language that aligns with your goals.</div>
+            </div>
+          </div>
+
+             <!-- fourth item-->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                How long is the course?
+              </button>
+            </h2>
+            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="questions">
+              <div class="accordion-body">3 Months if you spend more than 2 hours a day.</div>
+            </div>
+          </div>
+
+           <!-- fifth item -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                Do you help me find a job?
+              </button>
+            </h2>
+            <div id="question-five" class="accordion-collapse collapse" data-bs-parent="questions">
+              <div class="accordion-body">Unfortunately we don't</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary">
+      <h2 class="text-center text-white">Our Instructors</h2>
+      <p class="lead text-center text-white mb-5">
+        Our instructors have 2+ working experience as a Developers in the industry
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/28.jpg" class="rounded-circle mb-3 w-25" alt="Pic">
+              <h3 class="card-title mb-3">Jealous Matsikachando</h3>
+              <p class="card-text">Software Engineer</p>
+              <a href="https://x.com/MatsikaJay"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="https://web.facebook.com/funwel.matsikachando/"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="https://www.linkedin.com/in/jealous-matsikachando-3b5254180/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="https://github.com/pasej5"><i class="bi bi-github text-dark mx-1"></i></a>
+              <a href="https://www.instagram.com/pasej4/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact and map -->
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">South Africa Contact : </span>20 West Road South, Morningside, Johhanesburg, SA
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Cell : </span> (+27) 659 637 633
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email : </span> pasej5@gmail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Ghana Location : </span>45 Kofi Annan St, Accra, Ghana
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Cell : </span> (+256) 774 880 026
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead"> Copyright &copy; 2024</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5" >
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- modal for free enrolment  -->
+
+    <div class="modal fade" id="quote" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enrollLabel">Quotation form</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form its 100% free and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">First Name</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Car Make</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Model</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Year</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Registration Number</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">VIN/Chasis Number</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiamF5bWF0MSIsImEiOiJjbHlsdWMzMnQwYmptMmlxcnNvZW5vb2JyIn0.6qcjq2fU94AiPMRNJcFVSQ';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+        center: [-26.09205, 28.05472],
+        zoom: 18,
+      });
+    </script>    
+  </body>
+</html>
